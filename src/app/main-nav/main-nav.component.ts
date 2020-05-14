@@ -13,5 +13,8 @@ export class MainNavComponent implements OnInit {
 
   ngOnInit() {
   }
+  showAbout() {
+    this.toastService.showToast('success', 5000, 'This application was designed by Evan Ebert (C) 2018');
+  }
 
 }

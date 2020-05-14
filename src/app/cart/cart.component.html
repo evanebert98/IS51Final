@@ -9,13 +9,13 @@
     <button mat-raised-button color="primary">Add Bike Model 1</button>
   </li>
   <li class="nav-item">
-    <button mat-raised-button color="primary">Add Bike Model 2</button>
+    <button mat-raised-button color="primary"(click)="addCart()">Add Bike Model 2</button>
   </li>
   <li class="nav-item">
     <button mat-raised-button color="primary">Add Bike Model 3</button>
     </li>
   <li class="nav-item">
-    <button mat-raised-button color="primary">Checkout</button>
+    <button mat-raised-button color="primary"(click)= "checkout()">Checkout</button>
   </li>
 </ul>
 
@@ -46,8 +46,8 @@
       </mat-card-content>
       <mat-card-actions>
         <div class="btn-group pull-right">
-          <button mat-raised-button color="primary" class="pull-right">Save For Later</button>
-          <button mat-raised-button color="warn">Remove From Cart</button>
+          <button mat-raised-button color="primary" (click) ="savetoLocalStorage()" class="pull-right">Save For Later</button>
+          <button mat-raised-button color="warn"(click)="deleteCart(i)">Remove From Cart</button>
         </div>
       </mat-card-actions>
     </mat-card>
